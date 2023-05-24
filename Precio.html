@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/5.2/examples/pricing/ -->
+<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Ejemplo de precios · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">
+
+    
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href="./Pracing_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        body{
+            background-image:url('img/Fondo.jpg');
+                        background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+
+        }
+         .estrellas-cursor {
+            cursor: url('Eloy.jpg'), default=url('Eloy.jpg');
+
+        }
+
+
+        .fondo{
+               background:transparent;
+
+        }
+
+
+      .cont{
+      background-color: transparent;
+      border-radius: 9%;
+      width: auto;
+      height: auto;
+    }
+    
+    .ojo {
+      width: 300px;
+      height: 150px;
+      background-color: whitesmoke ;
+      border-radius: 50%;
+    background: linear-gradient(to bottom, black 0%,white 5%, white 50%,white 95%,  black 100%);
+    overflow: hidden;
+    animation: degradado 1500ms  infinite  alternate-reverse ;
+    
+
+    }
+
+@keyframes degradado {
+
+  0% {
+        background: linear-gradient(to bottom, black 45%, white 50%,white 50%, white 50%, black 55%)
+  } 
+  5% {
+    background: linear-gradient(to bottom, black 40%, white 50%,  black 60%)
+  } 
+  10% {
+    background: linear-gradient(to bottom, black 35%, white 50%, black 65%) 
+    } 
+  15% {
+      background: linear-gradient(to bottom, black 30%, white 50%,  black 70%) 
+  } 
+  20% {
+      background: linear-gradient(to bottom, black 25%,white 50%,  black 75%)
+  }
+  25% {
+    background: linear-gradient(to bottom, black 20%, white 50%, black 80%)
+  } 
+  30% {
+        background: linear-gradient(to bottom, black 15%, white 50%,white 50%, white 50%, black 85%)
+  } 
+  35% {
+    background: linear-gradient(to bottom, black 10%, white 50%,  black 95%)
+  } 
+  40% {
+    background: linear-gradient(to bottom, black 5%, white 50%, black 95%) } 
+  45% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+
+    50% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+    55% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+    60% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+    65% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+      70% {
+      background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+      75% {
+        background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+  80% {
+         background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+  85% {
+         background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+90% {
+         background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+  95% {
+        background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+  100% {
+        background: linear-gradient(to bottom, black 0%, white 50%,  black 100%) 
+  } 
+
+  }
+
+@keyframes degradado2 {
+  0% {
+    background-position: 0% 100%;    background: linear-gradient(to bottom, black 0%, white 0%, #fff 50%, #fff 100%)linear-gradient(to bottom,#000 0%, white 25%, #000 100%, #fff 100%)
+     linear-gradient(to bottom, black 0%, white 50%, black 100%, #fff 100%);
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+    
+    .pupila{
+      width: 40px;
+      height: 100px;
+      background-color: black;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+
+  }
+
+      .cont2{
+      background-color: transparent;
+      border-radius: 9%;
+      width: auto;
+      height: auto;
+    }
+    
+    .ojo2{
+      width: 300px;
+      height: 150px;
+      background-color: white;
+      border-radius: 50%;
+      top: 25%;
+      left: 25%;
+    overflow: hidden;
+    animation: degradado 1500ms 500ms infinite  alternate-reverse ;
+    }
+    
+    .pupila2{
+      width: 40px;
+      height: 100px;
+      background-color: black;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotacion2 2s linear infinite;
+    }
+
+      .cont3{
+      background-color: transparent;
+      border-radius: 9%;
+      width: auto;
+      height: auto;
+    }
+    .ojo3{
+      width: 300px;
+      height: 150px;
+      background-color: white;
+      border-radius: 50%;
+      top: 25%;
+        overflow: hidden;
+      left: 25%;
+      animation: degradado 1500ms  infinite  alternate-reverse ;
+    }
+    
+    .pupila3{
+      width: 40px;
+      height: 100px;
+      background-color: black;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: terror2 1s infinite ;
+    }
+
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      font{
+            border-radius: 5%;
+            font-weight: bold;
+            color: lightyellow;
+            opacity: 90%;
+      }
+
+      .letra1{ color: #e82754;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #111;
+        padding: 10px;
+        border-radius: 5px;
+
+      }
+      .letra2{
+    background-color: #111;
+    color: #e82754;
+    padding: 20px ;
+    border: 2px solid #e82754;
+    border-radius: 10px;
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     width: 50%;
+     margin-left: 25%;
+      }
+      .letra2:hover {
+        
+         background-color: #e82754;
+        color: #111;
+        animation: rotacion 3s alternate infinite ;
+        }
+
+@keyframes rotacion {
+  0% {
+
+    transform: rotate(0deg);
+    width: 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    width: 50%;
+  }
+
+
+}
+@keyframes rotacion2 {
+  0% {
+
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+
+  }
+
+
+}
+
+    .letra3 {
+  background-color: #000;
+  position: relative;
+  animation: terror 2s infinite linear;
+
+}
+    .letra3:hover{
+        animation: terror2 550ms infinite linear;
+    }
+
+@keyframes terror {
+  0% {
+    transform: scale(1);
+    background-color: #000;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #e82754;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #000;
+  }
+}
+@keyframes terror2 {
+
+  0% {
+    transform: scale(1);
+    background-color: #000;
+    
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #e82754;
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #000;
+  }
+}
+
+
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./Pracing_files/pricing.css" rel="stylesheet">
+  <script>/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+
+;// CONCATENATED MODULE: ../core/dist/flash-identifiers.js
+const FLASH_MIMETYPE = "application/x-shockwave-flash";
+const FUTURESPLASH_MIMETYPE = "application/futuresplash";
+const FLASH7_AND_8_MIMETYPE = "application/x-shockwave-flash2-preview";
+const FLASH_MOVIE_MIMETYPE = "application/vnd.adobe.flash.movie";
+const FLASH_ACTIVEX_CLASSID = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000";
+
+;// CONCATENATED MODULE: ../core/dist/plugin-polyfill.js
+
+/**
+ * Replacement object for `MimeTypeArray` that lets us install new fake mime
+ * types.
+ *
+ * Unlike plugins we can at least enumerate mime types in Firefox, so we don't
+ * lose data.
+ *
+ * We also expose a method called `install` which adds a new plugin. This is
+ * used to falsify Flash detection. If the existing `navigator.mimeTypes` has an
+ * `install` method, you should not use `RuffleMimeTypeArray` as some other
+ * plugin emulator is already present.
+ */
+class RuffleMimeTypeArray {
+    constructor(mimeTypes) {
+        this.__mimeTypes = [];
+        this.__namedMimeTypes = {};
+        if (mimeTypes) {
+            for (let i = 0; i < mimeTypes.length; i++) {
+                this.install(mimeTypes[i]);
+            }
+        }
+    }
+    /**
+     * Install a MIME Type into the array.
+     *
+     * @param mimeType The mime type to install
+     */
+    install(mimeType) {
+        const index = this.__mimeTypes.length;
+        this.__mimeTypes.push(mimeType);
+        this.__namedMimeTypes[mimeType.type] = mimeType;
+        this[mimeType.type] = mimeType;
+        this[index] = mimeType;
+    }
+    item(index) {
+        // This behavior is done to emulate a 32-bit uint,
+        // which browsers use.
+        return this.__mimeTypes[index >>> 0];
+    }
+    namedItem(name) {
+        return this.__namedMimeTypes[name];
+    }
+    get length() {
+        return this.__mimeTypes.length;
+    }
+    [Symbol.iterator]() {
+        return this.__mimeTypes[Symbol.iterator]();
+    }
+}
+/**
+ * Equivalent object to `Plugin` that allows us to falsify plugins.
+ */
+class RufflePlugin extends RuffleMimeTypeArray {
+    constructor(name, description, filename) {
+        super();
+        this.name = name;
+        this.description = description;
+        this.filename = filename;
+    }
+}
+/**
+ * Replacement object for `PluginArray` that lets us install new fake plugins.
+ *
+ * This object needs to wrap the native plugin array, since the user might have
+ * actual plugins installed. Firefox doesn't let us enumerate the array, though,
+ * which has some consequences. Namely, we can't actually perfectly wrap the
+ * native plugin array, at least unless there's some secret "unresolved object
+ * property name handler" that I've never known before in JS...
+ *
+ * We can still wrap `namedItem` perfectly at least.
+ *
+ * We also expose a method called `install` which adds a new plugin. This is
+ * used to falsify Flash detection. If the existing `navigator.plugins` has an
+ * `install` method, you should not use `RufflePluginArray` as some other plugin
+ * emulator is already present.
+ */
+class RufflePluginArray {
+    constructor(plugins) {
+        this.__plugins = [];
+        this.__namedPlugins = {};
+        for (let i = 0; i < plugins.length; i++) {
+            this.install(plugins[i]);
+        }
+    }
+    install(plugin) {
+        const index = this.__plugins.length;
+        this.__plugins.push(plugin);
+        this.__namedPlugins[plugin.name] = plugin;
+        this[plugin.name] = plugin;
+        this[index] = plugin;
+    }
+    item(index) {
+        // This behavior is done to emulate a 32-bit uint,
+        // which browsers use. Cloudflare's anti-bot
+        // checks rely on this.
+        return this.__plugins[index >>> 0];
+    }
+    namedItem(name) {
+        return this.__namedPlugins[name];
+    }
+    refresh() {
+        // Nothing to do, we just need to define the method.
+    }
+    [Symbol.iterator]() {
+        return this.__plugins[Symbol.iterator]();
+    }
+    get length() {
+        return this.__plugins.length;
+    }
+}
+/**
+ * A fake plugin designed to trigger Flash detection scripts.
+ */
+const FLASH_PLUGIN = new RufflePlugin("Shockwave Flash", "Shockwave Flash 32.0 r0", "ruffle.js");
+/**
+ * A fake plugin designed to allow early detection of if the Ruffle extension is in use.
+ */
+const RUFFLE_EXTENSION = new RufflePlugin("Ruffle Extension", "Ruffle Extension", "ruffle.js");
+FLASH_PLUGIN.install({
+    type: FUTURESPLASH_MIMETYPE,
+    description: "Shockwave Flash",
+    suffixes: "spl",
+    enabledPlugin: FLASH_PLUGIN,
+});
+FLASH_PLUGIN.install({
+    type: FLASH_MIMETYPE,
+    description: "Shockwave Flash",
+    suffixes: "swf",
+    enabledPlugin: FLASH_PLUGIN,
+});
+FLASH_PLUGIN.install({
+    type: FLASH7_AND_8_MIMETYPE,
+    description: "Shockwave Flash",
+    suffixes: "swf",
+    enabledPlugin: FLASH_PLUGIN,
+});
+FLASH_PLUGIN.install({
+    type: FLASH_MOVIE_MIMETYPE,
+    description: "Shockwave Flash",
+    suffixes: "swf",
+    enabledPlugin: FLASH_PLUGIN,
+});
+RUFFLE_EXTENSION.install({
+    type: "",
+    description: "Ruffle Detection",
+    suffixes: "",
+    enabledPlugin: RUFFLE_EXTENSION,
+});
+/**
+ * Install a fake plugin such that detectors will see it in `navigator.plugins`.
+ *
+ * This function takes care to check if the existing implementation of
+ * `navigator.plugins` already accepts fake plugin entries. If so, it will use
+ * that version of the plugin array. This allows the plugin polyfill to compose
+ * across multiple plugin emulators with the first emulator's polyfill winning.
+ *
+ * @param plugin The plugin to install
+ */
+function installPlugin(plugin) {
+    if (!("install" in navigator.plugins) || !navigator.plugins["install"]) {
+        Object.defineProperty(navigator, "plugins", {
+            value: new RufflePluginArray(navigator.plugins),
+            writable: false,
+        });
+    }
+    const plugins = navigator.plugins;
+    plugins.install(plugin);
+    if (plugin.length > 0 &&
+        (!("install" in navigator.mimeTypes) || !navigator.mimeTypes["install"])) {
+        Object.defineProperty(navigator, "mimeTypes", {
+            value: new RuffleMimeTypeArray(navigator.mimeTypes),
+            writable: false,
+        });
+    }
+    const mimeTypes = navigator.mimeTypes;
+    for (let i = 0; i < plugin.length; i += 1) {
+        mimeTypes.install(plugin[i]);
+    }
+}
+
+;// CONCATENATED MODULE: ./src/plugin-polyfill.ts
+// This file is compiled and then injected into content.ts's compiled form.
+
+installPlugin(FLASH_PLUGIN);
+installPlugin(RUFFLE_EXTENSION);
+
+/******/ })()
+;</script><script src="chrome-extension://donbcfbmhbcapadipfkeojnmajbakjdc/dist/ruffle.js?id=61209803421"></script><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style>
+
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Pracing_files/m=el_main_css"></head>
+  <body >    
+        <div class="conte-padre">
+        <div class="conte-texto">
+            <h1>DITTO  TE  ILUMNA</h1>
+        </div>
+        <div class="conte-degradado"></div>
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="https://getbootstrap.com/" class="d-flex align-items-center text-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+        <span class="fs-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejemplo de precios</font></font></span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empresa</font></font></a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apoyo</font></font></a>
+        <a class="py-2 text-dark text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a>
+      </nav>
+    </div>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mira que luz</font></font></h1>
+      <p class="fs-5 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cree rápidamente en la idea de que esta tranquilidad que tiene mirando esto cielo pueda tenerlo dia a dia.</font></font></p>
+    </div>
+  </header>
+
+  <main class="estrellas-cursor">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+      <div class="col">            
+            <div class="cont">
+            <div class="ojo">
+                <div class="parpado-superior"></div>
+            <div class="pupila"></div>
+                <div class="parpado-inferior"></div>
+     
+    </div>
+  </div>
+        <div class="card mb-4 rounded-3 shadow-sm fondo ">
+
+          <div class="card-header py-3 letra1">
+            <h4 class="my-0 fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gratis</font></font></h4>
+          </div>  
+
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$0 </font></font><small class="text-muted fw-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mes</font></font></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 subornidados incluidos</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 Ditto de peluche</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Soporte de correo electrónico</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acceso a las lleves del baño</font></font></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Registrate gratis</font></font></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+            <div class="cont2">
+            <div class="ojo2">
+            <div class="pupila2">
+      </div>
+    </div>
+  </div>
+        <div class="card mb-4 rounded-3 shadow-sm fondo">
+
+          <div class="card-header py-3 letra2">
+            <h4 class="my-0 fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pro</font></font></h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$15 </font></font><small class="text-muted fw-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mes</font></font></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20 usuarios incluidos</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 GB de almacenamiento</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Soporte prioritario por correo electrónico</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acceso al centro de ayuda</font></font></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar</font></font></button>
+          </div>
+        </div>
+      </div>
+      <div class="col fondo">
+                    <div class="cont3">
+            <div class="ojo3">
+            <div class="pupila3">
+      </div>
+    </div>
+  </div>
+        <div class="card mb-4 rounded-3 shadow-sm   fondo">
+
+          <div class="card-header py-3 letra3">
+            <h4 class="my-0 fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empresa</font></font></h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$29 </font></font><small class="text-muted fw-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mes</font></font></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30 usuarios incluidos</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15 GB de almacenamiento</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Soporte telefónico y por correo electrónico</font></font></li>
+              <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acceso al centro de ayuda</font></font></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contáctenos</font></font></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="display-6 text-center mb-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comparar planes</font></font></h2>
+
+    <div class="table-responsive ">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gratis</font></font></th>
+            <th style="width: 22%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pro</font></font></th>
+            <th style="width: 22%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empresa</font></font></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Público</font></font></th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privado</font></font></th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">permisos</font></font></th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Intercambio</font></font></th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Miembros ilimitados</font></font></th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seguridad adicional</font></font></th>
+            <td></td>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+      <div class="conte-padre">
+        <div class="conte-texto">
+        </div>
+        <div class="conte-degradado"></div>
+    </div>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="./Pracing_files/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2017–2022</font></font></small>
+      </div>
+      <div class="col-6 col-md">
+        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cosas interesantes</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Función aleatoria</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">función de equipo</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cosas para desarrolladores</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otro</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ultima vez</font></font></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recurso</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre del recurso</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otro recurso</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">último recurso</font></font></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Equipo</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ubicaciones</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidad</font></font></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.2/examples/pricing/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Términos</font></font></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+    
+  
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./Pracing_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Valora esta traducción</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tu opinión servirá para ayudar a mejorar el Traductor de Google</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Buena traducción" aria-label="Buena traducción" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" data-ruffle-polyfilled="" src="./Pracing_files/saved_resource.html"></iframe></div></div></div><script>
+		function returnCommentSymbol(language = "javascript") {
+			const languageObject = {
+				bat: "@REM",
+				c: "//",
+				csharp: "//",
+				cpp: "//",
+				closure: ";;",
+				coffeescript: "#",
+				dockercompose: "#",
+				css: "/*DELIMITER*/",
+				"cuda-cpp": "//",
+				dart: "//",
+				diff: "#",
+				dockerfile: "#",
+				fsharp: "//",
+				"git-commit": "//",
+				"git-rebase": "#",
+				go: "//",
+				groovy: "//",
+				handlebars: "{{!--DELIMITER--}}",
+				hlsl: "//",
+				html: "<!--DELIMITER-->",
+				ignore: "#",
+				ini: ";",
+				java: "//",
+				javascript: "//",
+				javascriptreact: "//",
+				json: "//",
+				jsonc: "//",
+				julia: "#",
+				latex: "%",
+				less: "//",
+				lua: "--",
+				makefile: "#",
+				markdown: "<!--DELIMITER-->",
+				"objective-c": "//",
+				"objective-cpp": "//",
+				perl: "#",
+				perl6: "#",
+				php: "<!--DELIMITER-->",
+				powershell: "#",
+				properties: ";",
+				jade: "//-",
+				python: "#",
+				r: "#",
+				razor: "<!--DELIMITER-->",
+				restructuredtext: "..",
+				ruby: "#",
+				rust: "//",
+				scss: "//",
+				shaderlab: "//",
+				shellscript: "#",
+				sql: "--",
+				svg: "<!--DELIMITER-->",
+				swift: "//",
+				tex: "%",
+				typescript: "//",
+				typescriptreact: "//",
+				vb: "'",
+				xml: "<!--DELIMITER-->",
+				xsl: "<!--DELIMITER-->",
+				yaml: "#"
+			}
+			if(!languageObject[language]){
+				return languageObject["python"].split("DELIMITER")
+			}
+			return languageObject[language].split("DELIMITER")
+		}
+		var savedChPos = 0
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		pos = {line: 0, ch: 0}
+		var suggestionsStatus = false
+		var docLang = "python"
+		var suggestionDisplayed = false
+		var isReturningSuggestion = false
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				const codeEditor = editor.CodeMirror
+				if(!editor.classList.contains("added-tab-function")){
+					editor.classList.add("added-tab-function")
+					codeEditor.removeKeyMap("Tab")
+					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+
+						if(returnedSuggestion){
+							acceptTab(returnedSuggestion)
+						}
+						else{
+							cm.execCommand("defaultTab")
+						}
+					}})
+				}
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+
+				if(cursor.ch > 0){
+					savedChPos = cursor.ch
+				}
+
+				const fileLang = doc.getMode().name
+				docLang = fileLang
+				const commentSymbol = returnCommentSymbol(fileLang)
+				if (event.key == "?"){
+					var lastLine = line
+					lastLine = lastLine.slice(0, savedChPos - 1)
+
+					if(lastLine.trim().startsWith(commentSymbol[0])){
+						if(fileLang !== "null"){
+							lastLine += " "+ fileLang
+						}
+						
+						lastLine = lastLine.split(commentSymbol[0])[1]
+						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
+						isReturningSuggestion = true
+						displayGrey("\nBlackbox loading...")
+					}
+				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-50), ch: 0 }, { line: cursor.line, ch: line.length })
+					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang, cursorPos: pos } } )
+					displayGrey("Blackbox loading...")
+				}else if(event.key === "ArrowRight" && returnedSuggestion){
+					acceptTab(returnedSuggestion)
+				}else if(event.key === "Enter" && isReturningSuggestion){
+					displayGrey("\nBlackbox loading...")
+				}else if(event.key === "Escape"){
+					displayGrey("")
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		}
+		function acceptSuggestion(text){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		function displayGrey(text){
+			if(!text){
+				document.querySelector(".blackbox-suggestion").remove()
+				return
+			}
+			var el = document.querySelector(".blackbox-suggestion")
+			if(!el){
+				el = document.createElement('span')
+				el.classList.add("blackbox-suggestion")
+				el.style = 'color:grey'
+				el.innerText = text
+			}
+			else{
+				el.innerText = text
+			}
+			
+			var lineIndex = pos.line;
+			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+		}
+		function updateSuggestionStatus(s){
+			suggestionDisplayed = s
+			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			isReturningSuggestion = false
+			const formattedCode = formatCode(event.data.payload.data)
+			returnedSuggestion = formattedCode
+			displayGrey(formattedCode)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestReturn'){
+			const prePos = event.data.payload.cursorPos
+			if(pos.line == prePos.line && pos.ch == prePos.ch){
+				returnedSuggestion = event.data.payload.data
+				displayGrey(event.data.payload.data)
+				updateSuggestionStatus(true)
+			}
+			else{
+				displayGrey()
+			}
+		}
+		if(event.data.source == 'codeSearchReturn'){
+			isReturningSuggestion = false
+			displayGrey()
+		}
+		if(event.data.source == 'suggestionsStatus'){
+			suggestionsStatus = event.data.payload.enabled
+		}
+		if(event.data.source == 'acceptSuggestion'){
+			
+			acceptSuggestion(event.data.suggestion)
+		}
+		})
+		document.addEventListener("keyup", function(){
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		})
+		function formatCode(data) {
+			if (Array.isArray(data)) {
+				var finalCode = ""
+				var pairs = []
+		
+				const commentSymbol = returnCommentSymbol(docLang)
+				data.forEach((codeArr, idx) => {
+					const code = codeArr[0]
+					var desc = codeArr[1]
+					const descArr = desc.split("\n")
+					var finalDesc = ""
+					descArr.forEach((descLine, idx) => {
+						const whiteSpace = descLine.search(/\S/)
+						if (commentSymbol.length < 2 || idx === 0) {
+							finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+						}
+						if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+							finalDesc = finalDesc + commentSymbol[1] + "\n"
+						}
+					})
+		
+					finalCode += finalDesc + "\n\n" + code
+					pairs.push(finalCode)
+				})
+				return "\n"+pairs.join("\n")
+			}
+		
+			return "\n"+data
+		}
+		
+		function insert(str, index, value) {
+			return str.substr(0, index) + value + str.substr(index)
+		}
+
+  let pupila = document.querySelector('.pupila');
+    let ojo = document.querySelector('.ojo');
+    let pupila2 = document.querySelector('.pupila2');
+    let ojo2 = document.querySelector('.ojo2');
+    let pupila3 = document.querySelector('.pupila3');
+    let ojo3 = document.querySelector('.ojo3');
+
+  
+    document.onmousemove =(e)=>{
+    let x2= e.clientX *100 /window.innerWidth-10+"%";
+    let y2= e.clientY *100 /window.innerHeight-25+"%";
+
+    pupila2.style.left=x2;
+    pupila2.style.top=y2;
+
+    let x= e.clientX *100 /window.innerWidth+25+"%";
+    let y= e.clientY *100 /window.innerHeight+"%";
+
+    pupila.style.left=x;
+    pupila.style.top=y;
+
+    let x3= e.clientX *100 /window.innerWidth-25+"%";
+    let y3= e.clientY *100 /window.innerHeight-25+"%";
+
+    pupila3.style.left=x3;
+     pupila3.style.top=y3;
+  
+  }
+
+	</script>
+
+    
+<script src="./Plantilla de carrusel · Bootstrap v5.3_files/bootstrap.bundle.min.js.descarga" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+
+</body></html>
